@@ -1,0 +1,42 @@
+mkdir pour creer un nouveau dossier
+touch pour creer un new fichier
+ls pour voir la liste de tout les dossiers dans le repertoire courant
+cd .. pour revenir d'un dossier ,remonter d'un dossier
+git config --global --list pour afficher le nom et le prenom de l'utilisateur actuel
+git config --global user.name 'Fatoumata'     Pour configurer son nom dans git
+git config --global user.email fantisca747@gmail.com   Pour configurer son mail 
+git init  pour initialiser notre dossier c'est cela qui va nous permettre de sauvegarder ce qu'on fait il s'occupe de sauvegarder le versionning du dossier
+
+code .  Permet d'ouvrir notre editeur automatiquement avec le dossier a l'interieur
+git add . pour agouter les derniers modifications du dossier   c'est a dire on prend tous nos nouveau fichiers et on les mets dans une zone d'attente appellee index pour ensuite les enregistrer grace a git commit
+git status   Pour voir l'etat du fichier ou dossier  
+git commit -m"explication ici"  Permet la sauvegarde reel des nouveau commit
+git log  pour voir la liste des commits(modifications)
+git log -n2 pour afficher les 2 derniers commits
+ git checkout  master  pour vous ramener a la version la plus recente
+git checkout sha-1(sha-1 qui est remplace par hexa decimal du commit c'est a dire de la version)
+settings dans github va supprimer notre repository( NB: c'est ps du code a ecrire)
+git clone  (lien )       c'est pour recuperer un travail depuis un depot distant
+ ex: git clone google.com
+git push -u origin master   pour envoyer notre enregistrement sur internet
+pour recuperer un travail depuis un depot distant on fait  git clone lien-github.com
+
+uploding exiting file apres la creation du repository et ensuite venir coller les fichiers qu'on veut puit commit les changements.tout ca dans l'interface github
+un readme est un fichier qui  va vous indiquer la procedure a suivre pour faire certaine chose  c'est comme un fichier de demarrage qui explique plein de chose en gros la aide les gens interesse a comprendre le projet
+ git  pull pour recuperer ce qui a ete mis sur le depot distant  on le fait en etant sur le proget #=comme h1,## moins important ...
+
+un gitignore contient des elements qu'on ne veut pas commit cela peut etre un fichier etc ce sont des extention .gitignore  ensuite pour ajouter un fichier on fait un /nomfichier a l'interieur du gitignore
+
+creation de branche:
+git branch lenon;  pour creer une branche
+git branch pour l'affichage
+pour changer de branch on fait:
+git checkout nombranch
+pour supprimer une branch :
+git branch -d nombranch
+a savoir que c'est une branch locale qui n'existe que chez moi
+maintenant pour que notre branch locale soit sur le depot distant on fait:
+git push --set-upstream origin nombranch
+pour fusionner la branch a celle de main :
+git merge nombranch
+oubien git pull--rebase qui fusionne les branche mais peu reommender
